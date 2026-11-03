@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://realplannet.github.io/Sahara/sitemap.xml

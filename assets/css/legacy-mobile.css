@@ -1,0 +1,21 @@
+/* Sahara Balinese — shared mobile overrides (subpages use inline styles, hence !important) */
+@media (max-width: 840px) {
+  nav { padding: 0 18px !important; }
+  nav > div { display: none !important; }
+  nav > a:last-child { padding: 10px 16px !important; letter-spacing: 0.16em !important; white-space: nowrap; }
+  section { padding-left: 6vw !important; padding-right: 6vw !important; }
+  h1 { font-size: clamp(38px, 10.5vw, 64px) !important; line-height: 1.1 !important; }
+  h2 { font-size: clamp(29px, 8vw, 44px) !important; }
+  h3 { font-size: clamp(22px, 6vw, 30px) !important; }
+  /* collapse all inline-styled grids to a single column */
+  [style*="grid-template-columns"] { grid-template-columns: 1fr !important; gap: 36px !important; }
+  /* photo grids: two-up instead of full collapse */
+  [style*="repeat(4"] { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
+  /* price-list rows: name on its own line, duration/price/book beneath */
+  [style*="120px 180px"] { display: flex !important; flex-wrap: wrap !important; align-items: baseline !important; gap: 6px 18px !important; }
+  [style*="120px 180px"] > div { text-align: left !important; }
+  [style*="120px 180px"] > div:first-child { flex: 1 1 100% !important; }
+  /* wide inline horizontal padding (heroes, banners) */
+  [style*="100px 60px"], [style*="px 100px"], [style*="px 80px"], [style*="px 64px"] { padding-left: 6vw !important; padding-right: 6vw !important; }
+  img, svg, video { max-width: 100%; }
+}
